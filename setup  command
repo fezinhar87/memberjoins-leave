@@ -1,0 +1,74 @@
+{
+  "name": "setup",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "KUrgs",
+  "actions": [
+    {
+      "channelName": "server stats",
+      "position": "1",
+      "storage": "1",
+      "varName": "cat",
+      "name": "Create Category Channel"
+    },
+    {
+      "category": "1",
+      "varName": "cat",
+      "info": "0",
+      "storage": "1",
+      "varName2": "catid",
+      "name": "Store Category Info"
+    },
+    {
+      "channelName": "humans",
+      "categoryID": "${tempVars(\"catid\")}",
+      "bitrate": "",
+      "userLimit": "",
+      "storage": "2",
+      "varName": "humans2",
+      "name": "Create Voice Channel"
+    },
+    {
+      "channelName": "bots",
+      "categoryID": "${tempVars(\"catid\")}",
+      "bitrate": "",
+      "userLimit": "",
+      "storage": "2",
+      "varName": "bots2",
+      "name": "Create Voice Channel"
+    },
+    {
+      "channelName": "members",
+      "categoryID": "${tempVars(\"catid\")}",
+      "bitrate": "",
+      "userLimit": "",
+      "storage": "2",
+      "varName": "members2",
+      "name": "Create Voice Channel"
+    },
+    {
+      "channel": "4",
+      "varName": "members2",
+      "info": "1",
+      "storage": "2",
+      "varName2": "membersid",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "4",
+      "varName": "bots2",
+      "info": "1",
+      "storage": "2",
+      "varName2": "botsid",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "4",
+      "varName": "humans2",
+      "info": "1",
+      "storage": "2",
+      "varName2": "humansid",
+      "name": "Store Channel Info"
+    }
+  ]
+}
