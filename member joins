@@ -1,12 +1,12 @@
 {
-  "name": "userjoin",
-  "temp": "memberjoin",
-  "event-type": "6",
-  "_id": "GDQgn",
+  "name": "userleave",
+  "temp": "memberleave",
+  "event-type": "7",
+  "_id": "RVOJY",
   "actions": [
     {
       "member": "2",
-      "varName": "memberjoin",
+      "varName": "memberleave",
       "info": "0",
       "varName2": "",
       "iftrue": "2",
@@ -34,19 +34,19 @@
     {
       "info": "0",
       "find": "${serverVars(\"humansid\")}",
-      "storage": "1",
+      "storage": "2",
       "varName": "humans channel",
       "name": "Find Channel"
     },
     {
-      "info": "0",
+      "info": "1",
       "find": "${serverVars(\"membersid\")}",
-      "storage": "1",
+      "storage": "2",
       "varName": "members channel",
       "name": "Find Channel"
     },
     {
-      "storage": "3",
+      "storage": "4",
       "varName": "humans channel",
       "channelType": "1",
       "toChange": "0",
@@ -54,7 +54,7 @@
       "name": "Edit Channel"
     },
     {
-      "storage": "3",
+      "storage": "4",
       "varName": "members channel",
       "channelType": "1",
       "toChange": "0",
@@ -73,14 +73,14 @@
       "name": "Store Server Info"
     },
     {
-      "info": "0",
+      "info": "1",
       "find": "${serverVars(\"botsid\")}",
-      "storage": "1",
+      "storage": "2",
       "varName": "bots channel",
       "name": "Find Channel"
     },
     {
-      "storage": "3",
+      "storage": "4",
       "varName": "bots channel",
       "channelType": "1",
       "toChange": "0",
